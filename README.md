@@ -4,8 +4,8 @@ If you are new, this guide will help you set up your computer so that you can
 contribute and learn more about contributing using both **Git** and **GitHub**.
 
 In our experience, most of you will be running Windows 10/11 as your main Operating System (OS).
-However, we prefer to use a linux based OS, as it makes solving/detecting problems related
-to OS easier to find (If you already use MacOs or a Linux distribution, skip to [Updating System](#updating-system).
+However, we prefer to use a Linux based OS, as it makes solving/detecting problems related
+to OS easier to find (If you already use macOS or a Linux distribution, skip to [Updating System](#updating-system).
 In addition, if we pass a command, the same should then work for everyone.
 This said, in case you are using Windows you have 2 possible solutions. The first
 is to set up a Virtual Machine (VM), where you will need to install a Linux distrubution.
@@ -18,21 +18,21 @@ Please follow the instructions under [For Windows Users](#for-windows-users).
 ### Setting up a Virtual Machine
 
 Before you consider this alternative, you should be aware that in terms of performance,
-its not the best, as you will be running 2 OS on the same hardware. Thus, you will have
+it's not the best, as you will be running 2 OS on the same hardware. Thus, you will have
 a weaker computer.
 
 Here's is a [tutorial](https://www.youtube.com/watch?v=v1JVqd8M3Yc) that you can follow to set up a VM using Virtual Box.
 
 ### Installing WSL
 
-This is very simple. You will need to open powershell as an administrator and then
+This is very simple. You will need to open Powershell as an **administrator** and then
 enter this command: `wsl --install`. For more information, you can find it [here](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-After installation, you can just search for Ubuntu using Windows search tool.
+After installation, you can just search for Ubuntu using Windows search tool. We recommend pinning this to your taskbar for easy access to your Linux terminal.
 
 ## Updating System
 
-> From this point forward, we assume you are using a Linux based OS (MacOS included).
+> From this point forward, we assume you are using a Linux based OS (macOS included).
 
 It is always nice to keep your system up to date. Therefore, even if you are a Linux user for a while,
 you can and should use the following command:
@@ -41,15 +41,18 @@ you can and should use the following command:
 sudo apt update && sudo apt upgrade -y
 ```
 
-In this one line, we can distinguis 2 different commands which are separated by `&&`.
-Let's go through both commands. `sudo` is a program that takes another program and
-run's it with root priviledges (same as administrator in Windows). `apt` is another
-program (Advanced Packaging Tool) which in other words is a package manager. `update` & `upgrade` are
+In this one line, we can distinguish 2 different commands which are separated by `&&`. Let's go through both commands.
+
+`sudo` is a program that takes another program and
+runs it with **root** priviledges (same as administrator in Windows). `apt` is another
+program (Advanced Packaging Tool) which in other words is a **package manager**. `update` & `upgrade` are
 2 possible flags of the program `apt`. **Update** means that you fetch any new changes
 to programs you have installed. You may think that it will install updates, but no, it just lets
-the OS know that there has been changes. **Upgrade** however, this will based on the fetched
-information now install all updates. The additional flag `-y` just means that you accecpt
+the OS know that there has been changes. **Upgrade**; however, based on the fetched
+information will now install all updates. The additional flag `-y` just means that you accecpt
 everything by default to be upgraded.
+
+All updates on your computer are done like this: applications, libraries, operating system updates, etc. **Centralized** is the key word ;)
 
 ## Installing Git
 
@@ -68,8 +71,8 @@ Notice that if you need to install other programs, you will use the same command
 
 > CLI = Command Line Interface also known as terminal
 
-At this point you might be asking, "why do people use CLI, this is so ugly!". Well,
-the answer is pretty simple, its fast. Therefore, instead of you so through the file explorer
+At this point you might be asking: "Why do people use CLI, this is so ugly!". Well,
+the answer is pretty simple, it's fast. Therefore, instead of you going through the file explorer
 finding files, or find applications to run, that process can be done more efficiently and way faster
 using CLI. As an example, if you use VS Code as you text editor, and it is installed
 (if you are using WSL and you have VS Code on your Windows it should also work), try typing `code` on the
@@ -78,7 +81,9 @@ terminal. Yep, that's right, you just opened VS Code.
 So to finish the answer, once you get used to the CLI, you will not want to leave from CLI 😅, saying
 this from my own experience.
 
-## Some Basic CLI Commands
+## Some Basic Bash Commands
+
+As we are interacting with our OS through a CLI interface, we need a tool for that. That software is called **Bash**. It is what we use to navigate the terminal.
 
 To get you started, we will be leaving here some of the most common commands:
 
