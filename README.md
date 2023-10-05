@@ -100,14 +100,6 @@ To get you started, we will be leaving here some of the most common commands:
 
 For a more details and more commands, check out this [link](https://www.educative.io/blog/bash-shell-command-cheat-sheet).
 
-## Configuring Git
+## A Beginner Git Guide
 
-Whenever you have a fresh installation of your OS of choice, you will need to configure Git, respectively name and email.
-To do so, you can use the following commands:
-
-```sh
-git config --global user.name "Your Name"
-git config --global user.email "Your Email" # Here you should try to use the same email as in your GitHub account
-```
-
-You can additionally set up your preferred editor using `git config --global core.editor <your editor>` (use code for VS Code)
+[Beginner Git Guide](./intro_git.md)
