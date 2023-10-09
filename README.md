@@ -67,43 +67,9 @@ sudo apt install git
 Notice that if you need to install other programs, you will use the same command but changing
 `git` with the desired program name.
 
-## Why Use CLI?
+## A Beginner CLI Guide
 
-> CLI = Command Line Interface also known as terminal
-
-At this point you might be asking: "Why do people use CLI, this is so ugly!". Well,
-the answer is pretty simple, it's fast. Therefore, instead of you going through the file explorer
-finding files, or find applications to run, that process can be done more efficiently and way faster
-using CLI. As an example, if you use VS Code as you text editor, and it is installed
-(if you are using WSL and you have VS Code on your Windows it should also work), try typing `code` on the
-terminal. Yep, that's right, you just opened VS Code.
-
-So to finish the answer, once you get used to the CLI, you will not want to leave from CLI 😅, saying
-this from my own experience.
-
-## Some Basic Bash Commands
-
-As we are interacting with our OS through a CLI interface, we need a tool for that. That software is called **Bash**. It is what we use to navigate the terminal.
-
-To get you started, we will be leaving here some of the most common commands:
-
-1. `sudo`: Give you root privileges (Be careful when using this command, it is too powerful)
-1. `cd <path>`: Change Directory. This is the way you can move around. If you use `cd ./<folder/path>`
-   you will be moving from where you are to this folder. You can also use `cd ../` to go backwards. Or lastly,
-   you can simply use full paths, such as `cd /home/`.
-1. `ls`: List directory, shows all files and folder from the current directory. Additionally, you can
-   also use a path similar to `cd`
-1. `mkdir <name>`: Creates a new directory with a name \<name>. Additionally, you can
-   also create a directory using a path. For instance, `mkdir /home/hello_world` which creates
-   a directory _hello_world_ inside `/home`.
-1. `touch <name>`: Create a file with a name \<name>. Note that you need to also include the extension.
-   For example, if you want to create a text file, it could look like this: `touch test.txt`
-1. `pwd`: Print Workding Directory. Essentially, prints out the full path to where you are.
-1. `rm <file>`: As the name suggests, you can remove/delete a file. (**Once removed, there is no way to retrieve it!!**). You can also remove
-   directories using `rm -r <dir name>`
-1. `mv <file/folder>`: Move a file/folder from one place to another. You can also use this to rename.
-
-For a more details and more commands, check out this [link](https://www.educative.io/blog/bash-shell-command-cheat-sheet).
+[Beginner CLI Guide](./intro_cli.md)
 
 ## A Beginner Git Guide
 
